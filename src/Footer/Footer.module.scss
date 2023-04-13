@@ -1,0 +1,159 @@
+.footer{
+    max-width: 1310px;
+    margin: 0 auto;
+    background:white;
+    padding: 0 20px;
+    display: flex;
+    .top{
+        width: 30%;
+        margin-top: 12px;
+        h3{
+            text-transform: uppercase;
+        }
+        .top-top{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            p{
+                font-size: 13px;
+                font-weight: 700;
+            }
+            span{
+                margin-left: 2px;
+                font-size: 14px;
+            }
+        }
+        .top-mid{
+            display: flex;
+            align-items: center;
+            margin-top: 12px;
+            justify-content:start;
+            p{
+
+            }
+            span{
+                margin-left: 65px;
+                font-weight: 600;
+            }
+
+        }
+        .top-left{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+
+            p{
+
+            }
+            span{
+                margin-left: 34px;
+                font-weight: 600;
+            }
+        }
+        .link{
+            display: flex;
+            flex-direction: column;
+            margin-top: 12px;
+            a{
+                display: block;
+                text-decoration: none;
+                color: #177aa8;
+                font-weight: 600;
+                font-size: 20px;
+            }
+        }
+        img{
+            margin-top: 12px;
+            width: 300px;
+        }
+
+    }
+    .mid{
+        width: 40%;
+        padding: 0 20px;
+        margin-top: 12px;
+        margin-left: 10px;
+        h3{
+            color: rgb(25, 142, 142);
+            margin-bottom: 3px;
+        }
+        .mid-top{
+            display:flex ;
+            align-items: center;
+            p{
+                font-weight: 700;
+            }
+            span{
+                font-size: 14px;
+                margin-left: 2px;
+            }
+        }
+        p{
+            font-size: 14px;
+        }
+        span{
+            font-size: 14px;
+        }
+        a{
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .anh{
+            display: flex;
+            align-items: center;
+            margin-top: 12px;
+            justify-content: center;
+            img{
+
+            }
+            
+        }
+
+    }
+    .bot{
+        width: 30%;
+        margin-top: 12px;
+        .anhnen{
+            margin-top: 12px;
+            position: relative;
+            img{
+
+            }
+            .thuonghieu{
+                position: absolute;
+                top: 6px;
+                left: 6px;
+                img{
+                    border: 2px solid white;
+                    margin: 4px;
+                }
+                    display: block;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                    p{
+                        color: white;
+                        font-size: 14px;
+                    }
+            }
+            button{
+                    position: absolute;
+                    background-color: white;
+                    color: black;
+                    font-size: 14px;
+                    border: none;
+                    bottom: 6px;
+                    &:first-child{
+                        left: 6px;
+                    }
+                    &:last-child{
+                        right: 6px;
+                    }
+                }
+        }
+
+    }
+}

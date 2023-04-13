@@ -15,7 +15,7 @@ function OnLine() {
       </div>
       <div className={cx('right')}>
         <input placeholder='Nhập email của bạn..'/>
-        <Link>Đăng ký </Link>
+        <Link to ='/singup'>Đăng ký </Link>
       </div>
     </div>
   )

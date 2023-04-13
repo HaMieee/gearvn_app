@@ -7,6 +7,7 @@ import {MdEmail} from 'react-icons/md'
 import {HiLockClosed} from 'react-icons/hi'
 import { Link } from 'react-router-dom'
 import OnLine from '../../OnLine/OnLine'
+import Footer from '../../Footer/Footer'
 
 const cx = classNames.bind(style)
 function Login() {
@@ -26,6 +27,7 @@ function Login() {
 
        </div>
        <OnLine/>
+       <Footer/>
     </div>
   )
 }
