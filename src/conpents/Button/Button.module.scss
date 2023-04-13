@@ -1,0 +1,14 @@
+.wrapper{
+    button{
+        border: none;
+        width: 90px;
+        height: 34px;
+        border-radius: 5px;
+        margin: 5px;
+        &:hover{
+            background-color:black;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
