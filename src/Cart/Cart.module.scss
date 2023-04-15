@@ -1,0 +1,50 @@
+.wrapper{
+    width: 100%;
+    padding: 0 10px;
+    margin-top: 2px;
+    .cart{
+        border: 1px solid #ccc;
+        width: 100%;
+        margin-bottom: 30px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        img{
+            width: 100%;
+        }
+        h2{
+            font-size: 14px;
+            margin-left: 10px;
+            font-weight: 500;
+        }
+        .gia{
+            margin-left: 10px;
+            margin-top: 16px;
+            position: relative;
+            margin-bottom: 12px;
+            del{
+                color: #6f5e5e;
+                font-size: 14px;
+            }
+            p{
+                color: red;
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+        &:hover{
+            border: 1px solid yellow;
+        }
+        .giamgia{
+            background: url('https://theme.hstatic.net/1000026716/1000440777/14/icon-saleoff.png') no-repeat center center;
+            position: absolute;
+            width: 48px;
+            height: 51px;
+            bottom: 0;
+            right: 22px;
+            text-align: center;
+            vertical-align: middle;
+            color: #180733;
+            font-size: 14px;
+            padding-top: 14px;
+        }
+    }
+}

@@ -1,5 +1,10 @@
 import React from 'react'
 import classNames from 'classnames/bind'
+import {FaShare, FaFacebookSquare,FaFacebook,FaCommentAlt} from 'react-icons/fa' 
+import {AiFillCheckCircle,AiTwotoneLike} from 'react-icons/ai'
+import {TfiCommentsSmiley} from 'react-icons/tfi'
+
+
 import style from './Footer.module.scss'
 import { Link } from 'react-router-dom'
 
@@ -70,13 +75,103 @@ function Footer() {
             <h3>FANPAGE</h3>
             <div className={cx('anhnen')}>
                 <img src='https://scontent.xx.fbcdn.net/v/t39.30808-6/340263811_3313336398997105_8705091293136380247_n.png?stp=dst-png_p130x130&_nc_cat=106&ccb=1-7&_nc_sid=dd9801&_nc_ohc=BHVZwuP5qzgAX-xtvQ-&_nc_ht=scontent.xx&edm=ANTofVoEAAAA&oh=00_AfDNsriddhcsfkIYScwtoCN-Jp2pzTZE4KJB0yDxsDJwGQ&oe=643D9432' alt=''/>
-                <div className={cx('thuonghieu')}>
+                <div className={cx('logo-fb')}>
                     <img src='https://scontent.fsgn13-4.fna.fbcdn.net/v/t39.30808-1/299828745_2149865795186558_7764138146005553525_n.jpg?stp=cp0_dst-jpg_p50x50&_nc_cat=1&ccb=1-7&_nc_sid=751413&_nc_ohc=edO09gkBKlsAX9mTQFj&_nc_ht=scontent.fsgn13-4.fna&oh=00_AfA5p-KvZGJfhqhADQm0WaxwcN3Rb_DFgoIBDgk60kPF6Q&oe=643C63DE' alt=''/>
-                    <Link>Gearvn</Link>
-                    <p>487.426 lượt thích</p>
+                    <div>
+                        <Link>Gearvn <span><AiFillCheckCircle/></span></Link>
+                        <p>487.426 lượt thích</p>
+                    </div>
                 </div>
-                    <button>Thích trang</button>
-                    <button>Chia sẻ</button>
+                <div className={cx('btn')}>
+                    <button><span><FaFacebookSquare/></span> Thích trang</button>
+                    <button><span><FaShare/></span> Chia sẻ</button>
+                </div>
+            </div>
+            <div className={cx('scroll')}>
+                <div className= {cx('cuc1')}>
+                <div className={cx('img1')}>
+                    <img src='https://scontent.xx.fbcdn.net/v/t39.30808-6/341004632_740305334311043_1297001752566550003_n.jpg?stp=cp1_dst-jpg_p296x100&_nc_cat=111&ccb=1-7&_nc_sid=8024bb&_nc_ohc=wOqbX6p5JAcAX_OE6SK&_nc_ht=scontent.xx&edm=ANTofVoEAAAA&oh=00_AfAetrgDLhAuSXlquBDx_tdoioAnXCvhpEb71EnviAoOog&oe=643D5991' alt=''/>
+                </div>
+                <div>
+                    <div className={cx('top')}>
+                    <img src='https://scontent.fsgn13-4.fna.fbcdn.net/v/t39.30808-1/299828745_2149865795186558_7764138146005553525_n.jpg?stp=cp0_dst-jpg_p50x50&_nc_cat=1&ccb=1-7&_nc_sid=751413&_nc_ohc=edO09gkBKlsAX9mTQFj&_nc_ht=scontent.fsgn13-4.fna&oh=00_AfA5p-KvZGJfhqhADQm0WaxwcN3Rb_DFgoIBDgk60kPF6Q&oe=643C63DE' alt=''/>
+                    <div>
+                        <Link>Gearvn <span><AiFillCheckCircle/></span></Link>
+                        <p>khoảng hai giờ trước</p>
+                    </div>
+                    <span><FaFacebook/></span>
+                    </div>
+                </div>
+                <div className={cx('left')}>
+                    <p>Hôm nay được dịp bán nhiều i9 "chính hãng" nên khoe với anh em tí 😎😎</p>
+                    <p>----------------------------------</p>
+                    <Link>https://gearvn.com/pages/pc-gvn</Link>
+                    <p>Xem thêm</p>
+                </div>
+                <hr></hr>
+                <div className={cx('bottum')}>
+                    <button><span><AiTwotoneLike/></span> 8</button>
+                    <button><span><FaCommentAlt/></span> Bình luận</button>
+                    <button><span><FaShare/></span> Chia sẻ</button>
+                </div>
+                </div>
+
+                <div className= {cx('cuc1')}>
+                <div className={cx('img1')}>
+                    <img src='https://scontent.xx.fbcdn.net/v/t39.30808-6/340647752_177760181799163_8524258101385572937_n.jpg?stp=dst-jpg_p296x100&_nc_cat=106&ccb=1-7&_nc_sid=8024bb&_nc_ohc=U0CTlpDMsLQAX-zf0hj&_nc_oc=AQnSAnI3ctC2H3fP-3KQj5_nXneSv4at5lsSb_GNNfmVs_wxaKTOYkTj1upVrCmYLWk&_nc_ht=scontent.xx&edm=ANTofVoEAAAA&oh=00_AfCUXxl6_F5MHb8gWM2UgjnE0v0SNuho8J3jBonLoWP2hw&oe=643E5874' alt=''/>
+                </div>
+                <div>
+                    <div className={cx('top')}>
+                    <img src='https://scontent.fsgn13-4.fna.fbcdn.net/v/t39.30808-1/299828745_2149865795186558_7764138146005553525_n.jpg?stp=cp0_dst-jpg_p50x50&_nc_cat=1&ccb=1-7&_nc_sid=751413&_nc_ohc=edO09gkBKlsAX9mTQFj&_nc_ht=scontent.fsgn13-4.fna&oh=00_AfA5p-KvZGJfhqhADQm0WaxwcN3Rb_DFgoIBDgk60kPF6Q&oe=643C63DE' alt=''/>
+                    <div>
+                        <Link>Gearvn <span><AiFillCheckCircle/></span></Link>
+                        <p>khoảng một giờ trước</p>
+                    </div>
+                    <span><FaFacebook/></span>
+                    </div>
+                </div>
+                <div className={cx('left')}>
+                    <p>Sở hữu ngay chiếc Laptop trang bị RTX 40 Series chưa bao giờ dễ dàng đến thế!🔥</p>
+                    <p>🔰MSI Cyborg 15 A12VE 240VN chưa tới 28 củ khoai nhưng được trang bị cấu hình tối tân nhất trong phân khúc!</p>
+                    <p>🔰Chip xử lý Intel Core i7-12650H đi đôi với Card đồ họa RTX 4050 mạnh mẽ, đảm bảo cân tốt tất cả các tựa Game hot hit nhất trên thị trường....</p>
+                    <p>Xem thêm</p>
+                </div>
+                <hr></hr>
+                <div className={cx('bottum')}>
+                    <button><span><AiTwotoneLike/></span>13</button>
+                    <button><span><FaCommentAlt/></span>1</button>
+                    <button><span><FaShare/></span> Chia sẻ</button>
+                </div>
+                </div>
+
+                <div className= {cx('cuc2')}>
+                <div>
+                    <div className={cx('top')}>
+                    <img src='https://scontent.fsgn13-4.fna.fbcdn.net/v/t39.30808-1/299828745_2149865795186558_7764138146005553525_n.jpg?stp=cp0_dst-jpg_p50x50&_nc_cat=1&ccb=1-7&_nc_sid=751413&_nc_ohc=edO09gkBKlsAX9mTQFj&_nc_ht=scontent.fsgn13-4.fna&oh=00_AfA5p-KvZGJfhqhADQm0WaxwcN3Rb_DFgoIBDgk60kPF6Q&oe=643C63DE' alt=''/>
+                    <div>
+                        <Link>Gearvn <span><AiFillCheckCircle/></span></Link>
+                        <p>khoảng một giờ trước</p>
+                    </div>
+                    <span><FaFacebook/></span>
+                    </div>
+                </div>
+                <div className={cx('left')}>
+                    <p>Ngonnnn</p>
+                    <div className={cx('img2')}>
+                    <img src='https://external.xx.fbcdn.net/emg1/v/t13/13830885917759103505?url=https%3A%2F%2Fgstatic.gvn360.com%2F2023%2F04%2FCounter-Strike-2-could-become-a-reality-later-this-month.jpg&fb_obo=1&utld=gvn360.com&stp=c0.5000x0.5000f_dst-emg0_p476x249_q75_u&ccb=13-1&oh=06_AbFL8PV9DjTM7Qdd-IPLK1XWyJK4p3PqYrUsm-aD452qWA&oe=643AED79&_nc_sid=6ac203' alt=''/>
+                </div>
+                </div>
+                <hr></hr>
+                <div className={cx('bottum')}>
+                    <button><span><AiTwotoneLike/></span>11</button>
+                    <button><span><FaCommentAlt/></span>Bình luận</button>
+                    <button><span><FaShare/></span> Chia sẻ</button>
+                </div>
+                </div>
+                <div className={cx('cuc4')}>
+                    <span>Tìm chúng tôi trên facebook</span>
+                    <span><TfiCommentsSmiley/></span>
+                </div>
             </div>
         </div>
     </div>

@@ -1,5 +1,9 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import classNames from 'classnames/bind'
+import axios from 'axios'
+import { Carousel } from 'react-responsive-carousel'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 import style from './Category.module.scss'
 import Nav from '../conpents/Nav/Nav'
 import Img from '../Img/Img'
@@ -7,6 +11,17 @@ import Img from '../Img/Img'
 const cx = classNames.bind(style)
 
 function Category() {
+  const [slider, setSlider] = useState()
+
+  console.log(Array.isArray(slider));
+
+  useEffect(() =>{
+    axios.get('https://backoffice.nodemy.vn/api/homepage?populate=*')
+      .then(res => setSlider(res.data.data))
+      .catch(error => console.log(error))
+  }, [])
+
+
   return (
     <div className= {cx('wrapper')}>
         <div className={cx('left')}>
@@ -30,7 +45,17 @@ function Category() {
         <div className={cx('right')}>
           <div className= {cx('top')}>
               <div className= {cx('top_left')}>
-                  <img src='https://theme.hstatic.net/1000026716/1000440777/14/slideshow_7.jpg?v=35734' alt=''/>
+                  <Carousel 
+                    infiniteLoop={true}
+                    transitionTime={3}
+                    autoPlay={true}
+                    showThumbs={false}
+                    showStatus={false}
+                  >
+                    {slider?.attributes?.leftBanner?.data.map((item) => (
+                      <img key={item.id} src={`https://backoffice.nodemy.vn${item?.attributes?.formats?.medium?.url}`} alt=''/>
+                    ) )}
+                  </Carousel>
               </div>
               <div className={cx('top_right')}>
                   <Img url='https://theme.hstatic.net/1000026716/1000440777/14/solid1.jpg?v=35734' />
